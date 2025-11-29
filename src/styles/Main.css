@@ -4,6 +4,7 @@
     align-items: center;
     background-color: rgb(207, 226, 240);;
     width: 100%;
+    max-width: 100%;
 }
 
 .mainTitle {
@@ -23,6 +24,7 @@
     margin-top: 20px;
     border: 1px solid rgb(173, 193, 209);
     background: #061045;
+    max-width: 100%;
      background: linear-gradient(0deg, rgba(6, 16, 69, 1) 0%, rgba(45, 31, 92, 1) 100%);
 }
 
@@ -37,6 +39,8 @@
     align-items: center;
     padding: 20px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .statsTitle
@@ -58,7 +62,7 @@
     padding: 12px 25px; 
     border-radius: 5px;
     background: #2275c3;
-    min-width: 20vh;
+    min-width: 40%;
     background: linear-gradient(0deg,rgba(34, 117, 195, 1) 0%, rgba(45, 31, 92, 1) 100%);
 }
 
@@ -98,8 +102,8 @@
 
 .transactionContainer
 {
-    width: 100vh;
-    min-height: 40vh;
+    width: 100%;
+    min-height: 40%;
      background: #061045;
     background: linear-gradient(0deg, rgba(6, 16, 69, 1) 0%, rgba(45, 31, 92, 1) 100%);
     border-radius: 5px;
@@ -109,6 +113,7 @@
     flex-direction: column;
     align-items: center;
     overflow-y: auto;  
+    max-width: 100%;
 }
 
 .transactionTitle

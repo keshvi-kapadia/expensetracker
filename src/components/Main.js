@@ -5,7 +5,7 @@ import { useState } from "react";
 function MainComponent() {
        const [totalExpense, setTotalExpense] = useState(0);
        const [totalIncome, setTotalIncome] = useState(0);
-       const [Amount, setAmount] = useState(0);
+       const [Amount, setAmount] = useState();
        const [transType, setTransType] = useState("");
        const [Category,setCategory] = useState("");
        const [date, setDate] = useState("");
@@ -14,6 +14,20 @@ function MainComponent() {
 
 
        const Balance =totalIncome-totalExpense;
+
+         const resetInputs=()=>{
+            setAmount("");
+
+            if(transType!=="")
+            {
+                document.querySelector('input[name="type"]:checked').checked = false;
+                setTransType("");
+            }
+           
+            document.querySelector('.formSelect').selectedIndex=0;
+            setCategory("");
+            setDate("");
+        }
 
        const addTransaction = (e) => {
         e.preventDefault();
@@ -39,6 +53,8 @@ function MainComponent() {
                return Number(Number(totalExpense)+Number(Amount));    
             });
         }
+
+        resetInputs();
        }
   return (
     
@@ -89,7 +105,7 @@ function MainComponent() {
                 </select>
                 <br/>
                 <label className="formLabel">Date : </label>
-                <input type="date" className="formInput" onChange={(e)=>{setDate(e.currentTarget.value)}}/>
+                <input type="date" className="formInput" onChange={(e)=>{setDate(e.currentTarget.value)}} value={date}/>
                 
                 <br/>
                 <button type="submit" className="formButton" onClick={addTransaction}>Add Transaction</button>

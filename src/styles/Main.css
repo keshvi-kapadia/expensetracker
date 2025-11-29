@@ -1,0 +1,190 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(207, 226, 240);;
+    width: 100%;
+}
+
+.mainTitle {
+    font-size: 1.5em;
+    color: hsl(290, 93%, 17%);
+    letter-spacing: 2px;
+    line-height: 10px;
+    display: flex;
+    justify-content: center;
+}
+.statsMainContainer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid rgb(173, 193, 209);
+    background: #061045;
+     background: linear-gradient(0deg, rgba(6, 16, 69, 1) 0%, rgba(45, 31, 92, 1) 100%);
+}
+
+.stats
+{
+    
+    width: 100vh;
+    height:30vh;
+    
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+   
+
+}
+
+.statsTitle
+{
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.innerContainer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border: 1px solid rgb(180, 56, 170);
+    padding: 12px 25px; 
+    border-radius: 5px;
+    background: #2275c3;
+    min-width: 20vh;
+    background: linear-gradient(0deg,rgba(34, 117, 195, 1) 0%, rgba(45, 31, 92, 1) 100%);
+}
+
+.divTitle
+{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.expenseAmount
+{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    color: hsl(0, 81%, 53%);
+}
+
+.incomeAmount
+{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    color: hsl(145, 63%, 49%);
+}
+
+.balAmount
+{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    color: hsl(192, 52%, 67%);
+}
+
+.transactionContainer
+{
+    width: 100vh;
+    min-height: 40vh;
+     background: #061045;
+    background: linear-gradient(0deg, rgba(6, 16, 69, 1) 0%, rgba(45, 31, 92, 1) 100%);
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;  
+}
+
+.transactionTitle
+{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.transactionForm
+{
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 15px;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.formLabel
+{
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.formInput
+{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(173, 193, 209);
+    font-size: medium;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.formRadio
+{
+    margin-right: 10px;
+    margin-left: 20px;
+    transform: scale(1.2);
+    margin-bottom: 15px;
+}
+
+.formSelect
+{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(173, 193, 209);
+    font-size: medium;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.formButton
+{
+    background-color: rgb(146, 192, 127);
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 2px solid rgb(3, 8, 12);
+    font-size: medium;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: hsl(168, 86%, 11%);
+    margin-top: 1em;
+}
+
+.formButton:hover
+{
+    background-color: rgb(120, 158, 104);
+    cursor: pointer;
+}

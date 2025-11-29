@@ -108,13 +108,13 @@
     background: #061045;
     background: linear-gradient(0deg, rgba(6, 16, 69, 1) 0%, rgba(45, 31, 92, 1) 100%);
     border-radius: 5px;
-    padding: 15px;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: auto;  
     max-width: 75%;
+    margin-bottom: 30px;
 }
 
 .transactionTitle
